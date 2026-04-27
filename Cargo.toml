@@ -1,6 +1,23 @@
 [package]
 name = "what-is-functional-programming"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+rayon = "1.10"
+
+[[example]]
+name = "data_filtering"
+path = "examples/data_filtering.rs"
+
+[[example]]
+name = "parallel_compute"
+path = "examples/parallel_compute.rs"
+
+[[example]]
+name = "error_handling"
+path = "examples/error_handling.rs"
+
+[[example]]
+name = "state_machine"
+path = "examples/state_machine.rs"
