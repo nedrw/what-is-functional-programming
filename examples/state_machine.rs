@@ -48,7 +48,8 @@ fn main() {
     assert_eq!(final_state, State::Done);
     println!("\n✅ 状态机正确到达终态");
 
-    // 如果需要打印转换过程，单独处理
+    // ↓ 以下是非函数式的命令式代码 —— 为了输出副作用（打印），
+    //   才不得不使用 mut 和 for 循环。纯函数核心在上方 fold 处已完成。
     println!("\n转换轨迹：");
     let mut state = State::Idle;
     for event in &events {
